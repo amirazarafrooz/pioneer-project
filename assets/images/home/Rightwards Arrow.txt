@@ -1,0 +1,5 @@
+Name:	Rightwards Arrow
+HTML Entity:
+    &#8594;
+    &#x2192;
+    &rightarrow;
