@@ -75,7 +75,9 @@
   --color-primary-main: #e6ae48;
 
   --color-neutral-white: #ffffff;
+  --color-neutral-50:#F5F5F5;
   --color-neutral-100: #989898;
+  --color-neutral-150: #b5b5b5;
   --color-neutral-200: #767676;
   --color-neutral-300: #5e5e5e;
   --color-neutral-900: #1a1a1a;
@@ -84,6 +86,7 @@
   /* ------ Borders & shadows ------ */
 
   --border-color-input: #e9e9e9;
+  --border-mobile-navMenu: rgba(255, 255, 255, .03);
   --color-text-input: #acacac;
 
   --shadow-desktop-navMenu: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -159,16 +162,18 @@
   --font-weight-mobile-h4: 400;
   --font-weight-mobile-big: 400;
   --font-weight-mobile-body: 400;
+  --font-weight-mobile-a: 700;
 
   --font-size-mobile-h1: 3.5rem;
   --font-size-mobile-h2: 3.5rem;
   --font-size-mobile-h3: 2.2rem;
   --font-size-mobile-h4: 1.3rem;
   --font-size-mobile-tb: 2.1rem;
-  --font-size-mobile-h5: 1.3rem;
+  --font-size-mobile-h5: 1.1rem;
   --font-size-mobile-h6: 1.3rem;
   --font-size-mobile-big: 1.3rem;
-  --font-size-mobile-body: 1.3rem;
+  --font-size-mobile-body: 1.4rem;
+  --font-size-mobile-a: 1.2rem;
 
   --font-LH-mobile-h1: 3.6rem;
   --font-LH-mobile-h2: 3.6rem;
@@ -179,6 +184,8 @@
   --font-LH-mobile-big: 1.9rem;
   --font-LH-mobile-body: 1.9rem;
   --font-LH-mobile-tb: 2.1rem;
+  --font-LH-mobile-a: 2.4rem;
+  --font-LH-mobile-p: 1.6rem;
 
   /* ---------------- @media help -------------- */
 
