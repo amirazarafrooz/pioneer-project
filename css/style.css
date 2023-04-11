@@ -87,6 +87,7 @@
   font-weight: var(--font-weight-mobile-body);
   letter-spacing: 1px;
 }
+
 .containerheader__navbar__menu__link--active {
   text-decoration: none;
   color: var(--color-neutral-white);
@@ -313,6 +314,7 @@ background-color: cadetblue;
 .containerfooter__footer2__copyright{
   width: 60%;
 }
+
 .containerheader2__navbar__menu__link--active {
   text-decoration: none;
   color: var(--color-neutral-black);
@@ -383,6 +385,7 @@ background-color: cadetblue;
   line-height: var(--font-LH-mobile-body);
   font-weight: var(--font-weight-mobile-body);
 }
+
 .containerheader2__navbar__menu__link:hover {
   color: var(--color-neutral-black);
 }
@@ -393,6 +396,7 @@ background-color: cadetblue;
   color: var(--color-primary-main);
 }
 }
+
 
 
 
