@@ -238,6 +238,4 @@
         }
     }
     
-    @media (min-width:960px) {
-        .containerproductdetail_maintext_title h2 {}
-    }
+    @media (min-width:960px) {}
