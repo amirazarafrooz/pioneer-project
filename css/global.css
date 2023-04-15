@@ -134,6 +134,7 @@
   --font-weight-tablet-h6: 800;
   --font-weight-tablet-big: 400;
   --font-weight-tablet-body: 400;
+  --font-weight-tablet-a: 600;
 
   --font-size-tablet-h1: 4.4rem;
   --font-size-tablet-h2: 4.4rem;
@@ -144,6 +145,8 @@
   --font-size-tablet-h6: 1.3rem;
   --font-size-tablet-big: 1.3rem;
   --font-size-tablet-body: 1.3rem;
+  --font-size-tablet-a: 1.4rem;
+  --font-size-tablet-big2: 1.6rem;
 
   --font-LH-tablet-h1: 4.5rem;
   --font-LH-tablet-h2: 4.5rem;
@@ -154,6 +157,8 @@
   --font-LH-tablet-big: 2.1rem;
   --font-LH-tablet-body: 1.9rem;
   --font-LH-tablet-tb: 2.1rem;
+  --font-LH-tablet-a: 2.4rem;
+  --font-LH-tablet-big2: 2.8rem;
 
   --font-weight-mobile-h1: 700;
   --font-weight-mobile-h2: 700;
@@ -164,6 +169,8 @@
   --font-weight-mobile-big: 400;
   --font-weight-mobile-body: 400;
   --font-weight-mobile-a: 700;
+  --font-weight-mobile-a2: 900;
+  --font-weight-mobile-big2: 400;
 
   --font-size-mobile-h1: 3.5rem;
   --font-size-mobile-h2: 3.5rem;

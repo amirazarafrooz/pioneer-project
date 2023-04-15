@@ -48,10 +48,9 @@
     font-family: var(--font-family);
     font-size: var(--font-size-mobile-a);
     line-height: var(--font-LH-mobile-a);
-    font-weight: var(--font-weight-mobile-a);
-text-decoration: none;
-color: black;
-font-weight: 900;
+    font-weight: var(--font-weight-mobile-a2);
+    text-decoration: none;
+    color: black;
 }
 .product__category{
     display: flex;
@@ -96,9 +95,10 @@ font-weight: 900;
 .hoverimage{
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 .hoverimage img{
-    padding: 160px;
+    padding: 120px;
     background-color: var(--color-primary-main);
     opacity: 0;
     transition: all .5s linear ;
@@ -223,4 +223,119 @@ font-weight: 900;
 }
 .introduce__text:hover a{
     background-color: var(--color-primary-dark);
+}
+/* ===========================mediaquery======================== */
+@media(min-width:750px) {
+    .containerhome__banner__bannerText{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align:center ;
+        width: 60%;
+        padding: 5px;
+    }
+    .containerhome__banner h2{
+        color: var(--color-primary-main);
+        font-family: var(--font-family);
+        font-size: var(--font-size-tablet-h2);
+        line-height: var(--font-LH-tablet-h2);
+        font-weight: var(--font-weight-tablet-h2);
+        margin-bottom: 15px;
+    }
+    .containerhome__banner p{
+        font-size: var(--font-size-tablet-big2);
+        line-height: var(--font-LH-tablet-big2);
+        font-weight: var(--font-weight-mobile-big);
+    }
+    .containerhome__banner a{
+        font-size: var(--font-size-tablet-a);
+        line-height: var(--font-LH-tablet-a);
+        font-weight: var(--font-weight-tablet-a);
+    }
+    .containerhome__banner{
+        width: 100%;
+        height: 650px;
+        margin-bottom: 150px;
+    }
+    .product__category h2{
+        font-size: var(--font-size-tablet-h2);
+        line-height: var(--font-LH-tablet-h2);
+        font-weight: var(--font-weight-tablet-h2);
+        margin-bottom: 20px;
+    }
+    .product__category__divider{
+        height: 8px;
+        width: 90%;
+        margin-bottom: 16px;
+    }
+    .product__catergoy__objects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        /* margin-top: 150px; */
+        width: 100%;
+    }
+    .hoverimage img{
+        padding: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:960px) {
+
+
+
 }
