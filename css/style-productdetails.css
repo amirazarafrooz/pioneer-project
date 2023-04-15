@@ -96,7 +96,7 @@
     /* color code for hover mode */
     
     .containerproductdetail_table_btn:hover {
-        /* background-color: ; */
+        background-color: var(--color-primary-dark);
     }
     
     .containerproductdetail_attribute_aside_text {
