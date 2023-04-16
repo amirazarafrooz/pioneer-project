@@ -87,7 +87,6 @@
   font-weight: var(--font-weight-mobile-body);
   letter-spacing: 1px;
 }
-<<<<<<< HEAD
 .containerheader__navbar__menu__link--active {
   text-decoration: none;
   color: var(--color-neutral-white);
@@ -239,8 +238,6 @@
   font-weight: var(--font-weight-mobile-body);
   letter-spacing: 1px;
 }
-=======
->>>>>>> b3f053c3e7ff302b2c644cd42c61e5256484aa0a
 .containerheader__navbar__menu__link--active {
   text-decoration: none;
   color: var(--color-neutral-white);
@@ -560,10 +557,6 @@ background-color: cadetblue;
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b3f053c3e7ff302b2c644cd42c61e5256484aa0a
 /* .containerheader__navbar__menu{
   background-color: transparent;
   display: flex;
