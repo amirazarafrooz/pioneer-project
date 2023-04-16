@@ -91,7 +91,7 @@
         background-color: var(--color-primary-main);
         color: var(--color-neutral-white);
         font-size: var(--font-size-mobile-big);
-        padding: 12px 20px;
+        padding: 12px 24px;
     }
     /* color code for hover mode */
     
@@ -209,7 +209,6 @@
         .containerproductdetail_maintext_title h2 {
             font-size: var(--font-size-tablet-h2);
             font-weight: var(--font-weight-tablet-h2);
-            /* font-weight: 500; */
             line-height: var(--font-LH-tablet-h2);
         }
         .containerproductdetail_maintext_title p {
@@ -250,4 +249,42 @@
         }
     }
     
-    @media (min-width:960px) {}
+    @media (min-width:960px) {
+        .containerproductdetail_maintext {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        .containerproductdetail_maintext_title h2 {
+            font-size: var(--font-size-desktop-h2);
+            font-weight: var(--font-weight-desktop-h2);
+            line-height: var(--font-LH-desktop-h2);
+        }
+        .containerproductdetail_maintext_title p {
+            font-size: var(--font-size-desktop-big);
+            /* font-weight: var(--font-weight-desktop-big); */
+            font-weight: 100;
+            line-height: var(--font-LH-desktop-big);
+        }
+        .containerproductdetail_table_details {
+            font-size: var(--font-size-desktop-body);
+            line-height: var(--font-LH-desktop-tb);
+        }
+        .containerproductdetail_attribute {
+            padding: 40px 0;
+        }
+        .containerproductdetail_attribute_aside_text {
+            width: 45%;
+            padding: 0 0 0 58px;
+        }
+        .containerproductdetail_attribute_aside_text h5 {
+            font-size: var(--font-size-desktop-h5);
+            font-weight: var(--font-weight-desktop-h5);
+            line-height: var(--font-LH-desktop-h5);
+        }
+        .containerproductdetail_attribute_aside_text p {
+            font-size: var(--font-size-desktop-body);
+            /* font-weight: var(--font-weight-desktop-body); */
+            font-weight: 100;
+            line-height: var(--font-LH-desktop-body);
+        }
+    }
