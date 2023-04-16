@@ -104,6 +104,7 @@
   --font-weight-desktop-h5: 800;
   --font-weight-desktop-h6: 800;
   --font-weight-desktop-big: 400;
+  --font-weight-desktop-a: 700;
   --font-weight-desktop-body: 400;
 
   --font-size-desktop-h1: 5.8rem;
@@ -114,6 +115,7 @@
   --font-size-desktop-h5: 1.9rem;
   --font-size-desktop-h6: 1.4rem;
   --font-size-desktop-big: 1.6rem;
+  --font-size-desktop-a: 1.4rem;
   --font-size-desktop-body: 1.4rem;
 
   --font-LH-desktop-h1: 6rem;
@@ -124,6 +126,7 @@
   --font-LH-desktop-h6: 2.4rem;
   --font-LH-desktop-big: 2.8rem;
   --font-LH-desktop-body: 2.4rem;
+  --font-LH-desktop-a: 2.4rem;
   --font-LH-desktop-tb: 2.1rem;
 
   --font-weight-tablet-h1: 700;
@@ -182,6 +185,7 @@
   --font-size-mobile-big: 1.3rem;
   --font-size-mobile-body: 1.4rem;
   --font-size-mobile-a: 1.2rem;
+  --font-size-mobile-title: 1.5rem;
 
   --font-LH-mobile-h1: 3.6rem;
   --font-LH-mobile-h2: 3.6rem;
