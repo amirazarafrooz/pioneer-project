@@ -1,7 +1,265 @@
 @import url(global.css);
 
-.containerprocess{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height:300vh;
+.containerprocess {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 80px;
+  font-family: var(--font-family);
+}
+/******* Process Video ********/
+.process-video {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+#process-video__video {
+  width: 100%;
+}
+.process-video__logo {
+  height: 100%;
+  max-height: 911px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 100%;
+  object-fit: scale-down;
+}
+/******* Process Cards ********/
+.process-cards-container {
+  width: 100%;
+  padding: 140px 40px;
+  background-color: var(--color-neutral-50);
+}
+.process-cards-container__texts {
+  color: var(--color-primary-main);
+  font-size: var(--font-size-mobile-h2);
+  margin-bottom: 28px;
+  text-align: center;
+}
+.process-cards-container__cards-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color-neutral-white);
+}
+.process-cards-container__card-image {
+  width: 100%;
+}
+.process-cards-container__card-text-box {
+  padding: 28px;
+}
+.process-cards-container__card-text {
+  font-size: var(--font-size-mobile-h6);
+  font-weight: var(--font-weight-mobile-h4);
+}
+.process-cards-container__card p {
+  font-size: var(--font-size-mobile-h6);
+  color: var(--color-neutral-300);
+  padding-top: 12px;
+  line-height: 20px;
+}
+/******* Skills Bar-top ********/
+.process-skillsbar-container {
+  width: 100%;
+  padding: 132px 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color-neutral-white);
+}
+.process-skillsbar-container_image {
+  width: 100%;
+}
+.process-skillsbar-container_image-box p {
+  font-size: var(--font-size-mobile-h6);
+  color: var(--color-neutral-300);
+  padding-top: 16px;
+}
+.process-skillsbar-container-bar_texts-part p {
+  font-size: var(--font-size-mobile-h6);
+  color: var(--color-neutral-200);
+  padding: 16px 8px 0 8px;
+  line-height: 20px;
+}
+/******* Skills Bar-botton ********/
+.process-skillsbar-container_bar {
+  position: relative;
+  width: 100%;
+}
+.process-skillsbar-container_bar-title {
+  font-size: var(--font-size-mobile-h3);
+  color: var(--color-neutral-black);
+  font-weight: var(--font-weight-mobile-h4);
+  padding: 28px 0;
+}
+.skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.skill-box .skill-bar {
+  height: 10px;
+  width: 100%;
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  background: var(--color-primary-main);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+.skill-per.part2 {
+  width: 70%;
+  animation-delay: 0.1s;
+}
+.skill-per.part3 {
+  width: 50%;
+  animation-delay: 0.2s;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: var(--color-primary-main);
+  z-index: 1;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: var(--color-primary-main);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* (min-width: 480px) and (max-width: 959px) --- Tablet */
+
+@media (min-width: 750px) {
+  .process-cards-container__texts {
+    font-size: var(--font-size-tablet-h1);
+  }
+  .process-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .process-cards-container__cards-box {
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-between;
+    width: 92%;
+    background-color: var(--color-neutral-50);
+  }
+  .process-cards-container__card {
+    width: 32%;
+    background-color: var(--color-neutral-white);
+  }
+  .process-cards-container__card-text {
+    font-size: var(--font-LH-tablet-h4);
+  }
+  .process-cards-container__card p {
+    line-height: 22px;
+    padding: 16px 12px 0 0px;
+  }
+  .process-skillsbar-container_bar-title {
+    font-size: var(--font-LH-tablet-h3);
+    padding: 0;
+  }
+  .process-skillsbar-container_image-box p {
+    font-size: var(--font-LH-tablet-h6);
+    padding-top: 20px;
+    color: var(--color-neutral-black);
+  }
+  .process-skillsbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .process-skillsbar-container_image-box {
+    width: 30%;
+  }
+  .process-skillsbar-container_bar {
+    width: 65%;
+  }
+  .process-skillsbar-container-bar_texts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .process-skillsbar-container-bar_texts-part {
+    width: 50%;
+    padding-right: 20px;
+  }
+}
+
+/* (min-width: 960px) --- Desktop */
+
+@media (min-width: 930px) {
+  .video_section video {
+    max-height: 900px;
+  }
+  .process-cards-container__texts {
+    font-size: var(--font-size-desktop-h1);
+  }
+  .process-cards-container__card-text {
+    font-size: var(--font-size-desktop-h4);
+  }
+  .process-cards-container__card p {
+    font-size: var(--font-size-desktop-h6);
+  }
+  .process-skillsbar-container_bar-title {
+    font-size: var(--font-size-desktop-h3);
+  }
+  .process-skillsbar-container_image-box p {
+    font-size: var(--font-LH-desktop-tb);
+    line-height: 28px;
+    padding-right: 8px;
+  }
+  .process-skillsbar-container-bar_texts-part p {
+    font-size: var(--font-size-desktop-body);
+    line-height: 24px;
+  }
+  .process-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .process-cards-container__cards-box {
+    width: 86%;
+    padding-top: 32px;
+  }
+  .process-bar-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .process-skillsbar-container {
+    width: 88%;
+    padding: 140px 40px;
+  }
 }
