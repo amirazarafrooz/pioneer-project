@@ -29,7 +29,7 @@
 .containerheader.sticky{
   box-shadow: none;
   /* position: fixed; */
-  height: 60px;
+  height: 80px;
   /* background-color: rgb(255, 255, 255); */
   transition: all 0.3s ease-in-out; 
    -webkit-transition: all 0.3s ease-in-out;
@@ -186,7 +186,7 @@
 .containerheader.sticky{
   box-shadow: none;
   /* position: fixed; */
-  height: 60px;
+  height: 80px;
   /* background-color: rgb(255, 255, 255); */
   transition: all 0.3s ease-in-out; 
    -webkit-transition: all 0.3s ease-in-out;
@@ -411,6 +411,7 @@ background-color: cadetblue;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 0 0 100px;
+  height: 80px;
 }
 .containerheader__navbar img{
   right: 100px;
@@ -518,6 +519,11 @@ background-color: cadetblue;
 }
 .containerheader__navbar__menu{
   display: none;
+}
+.containerheader {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
 }
 .cotainerheader2{
   display: flex;
