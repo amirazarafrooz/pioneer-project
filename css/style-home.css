@@ -245,6 +245,14 @@
         height: auto;
         overflow: hidden;
     }
+    .product__catergory__objects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* margin-top: 150px; */
+        width: 100%;
+    }
 }
 @media(min-width:750px) {
     .containerhome__banner__bannerText{
@@ -401,11 +409,11 @@
     }
     .procces{
         width: 100%;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .procces video{
         /* width: 100%; */
-        height: 115vh;
+        height: 600px;
     }
     .process__text h2{
         font-size: var(--font-size-desktop-h2);
@@ -473,5 +481,9 @@
          width: 90%;
   
         overflow: hidden;
+    }
+    .procces video{
+        /* width: 100%; */
+        height: 120vh;
     }
 }
