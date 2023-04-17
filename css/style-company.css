@@ -11,7 +11,7 @@ html {
 }
 
 .box-heder {
-    background-color: #F5F5F5;
+    background-color: var(--border-color-input);
 }
 
 .box-heder__n1 {
@@ -19,14 +19,15 @@ html {
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #F5F5F5 ;
+    background-color: var(--border-color-input) ;
 }
 
 .box-heder__n1__h {
     color: black;
-    font-family:;
-    font-size: ;
+    font-family:var( --font-family);
+    font-size: var(--font-size-desktop-h1) ;
     margin-top:200px ;
+    font-weight: var(--font-weight-desktop-h1);
 }
 
 .box-heder__n2 {
@@ -41,8 +42,8 @@ html {
 .box-heder__n1__p {
     text-align: center;
     color: black;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var(--font-weight-mobile-h1) ;
     padding:20px  40px;
 }
 
@@ -61,15 +62,15 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var(--font-weight-mobile-h1) ;
 }
 
 .box-text__p {
     font-weight: bold;
     text-align: center;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var(font-size-mobile-h3) ;
 }
 
 .box-button {
@@ -80,29 +81,29 @@ html {
 
 .box-button__n__1 {
     padding:20px ;
-    border-bottom: #F9F9F9;
+    border-bottom: var(--border-color-input);
     width: 250px;
     height: auto;
-    background-color: #F9F9F9;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--border-color-input);
+    box-shadow: var(--border-mobile-navMenu);
 }
 
 .box-button__n__1:hover {
-    background-color:orange;
+    background-color:var(--color-primary-main);
 }
 .box-button__n__1__b {
     text-align: center;
-    color: black;
+    color: var(--color-neutral-black);
 }
 
 .box-button__n__1__b1 {
     text-align: center;
-    color: black;
+    color: var(--color-neutral-black);
 }
 
 .box-button__n__1__b2 {
     text-align: center;
-    color: black;
+    color: var(--color-neutral-black);
 }
 .box-img {
     padding: 80px  40px;
@@ -111,8 +112,8 @@ html {
 
 .box-img__n1__p1 {
     padding-top: 10px;
-    font-family: ;
-    font-size: ;
+    font-family:var(--font-family) ;
+    font-size: var( --font-weight-mobile-h3) ;
 }
 
 .box-img__n2__img {
@@ -127,8 +128,8 @@ html {
 
 .box-img1__n1__p1 {
     padding-top: 10px;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var( --font-weight-mobile-h3) ;
 }
 
 .box-img1__n2__img {
@@ -146,14 +147,14 @@ html {
 
 .box-foter__n1__p {
     padding: 15px 0px;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family);
+    font-size: var(--font-weight-mobile-h3);
 }
 
 .box-foter__n2__p {
     padding: 15px 0px;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var( --font-weight-mobile-h3);
 }
 
 .box-min {
@@ -171,14 +172,14 @@ html {
 
 .box-min__n2__p {
     font-weight: bold;
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var( --font-weight-mobile-h3) ;
     padding:15px 0px ;
 }
 
 .box-min__n2__p1{
-    font-family: ;
-    font-size: ;
+    font-family: var(--font-family) ;
+    font-size: var( --font-weight-mobile-h3) ;
 }
 
 @media(min-width: 480px) and (max-width: 959px) {
@@ -210,12 +211,12 @@ html {
     }
     .box-button__n__1 {
         box-shadow: none;
-        background-color: white;
+        background-color: var(--color-neutral-white);
         padding: 20px  150px;
     }
 
     .box-button__n__1:hover {
-        background-color:orange;
+        background-color:var(--color-primary-main);
     }
 
     .box-img1 {
@@ -229,8 +230,8 @@ html {
 
     .box-img1__n1__p1 {
         padding-top: 20px;
-        font-size: ;
-        font-family: ;
+        font-size:var(--font-weight-tablet-h2) ;
+        font-family: var(--font-family);
     }
 
     .box-img1__n2__img {
@@ -244,19 +245,19 @@ html {
     }
     .box-foter__n1__p {
         padding: 0px 0px ;
-        font-size: ;
-        font-family: ;
+        font-size:var(--font-weight-tablet-h2) ;
+        font-family: var(--font-family) ;
     }
-    ..box-foter__n1__p {
+    .box-foter__n1__p {
         padding:15px 0px ;
-        font-size: ;
-        font-family: ;
+        font-size: var(--font-family) ;
+        font-family: var(--font-weight-tablet-h2) ;
     }
 
     .box-foter__n2__p {
         padding: 0px 15px ;
-        font-size: ;
-        font-family: ;
+        font-size:var(--font-weight-tablet-h2) ;
+        font-family: var(--font-family) ;
     }
 
 }
@@ -275,8 +276,8 @@ html {
     }
     .box-img__n1__p1 {
         padding-right: 20px;
-        font-size: ;
-        font-family: ;
+        font-size:var( --font-weight-desktop-h1) ;
+        font-family: var() ;
     }
     .box-min{
         display: flex;
@@ -292,12 +293,12 @@ html {
     }
 
     .box-button__n__1:hover {
-        background-color:orange;
+        background-color:var(--color-primary-main);
     }
 
     .box-button__n__1 {
         box-shadow: none;
-        background-color: white;
+        background-color: var(--color-neutral-white);
         padding: 20px  150px;
     }
 
@@ -312,8 +313,8 @@ html {
 
     .box-img1__n1__p1 {
         padding-top: 20px;
-        font-size: ;
-        font-family: ;
+        font-size:var(-font-weight-desktop-h1) ;
+        font-family: var(--font-family);
     }
 
     .box-img1__n2__img {
@@ -331,23 +332,23 @@ html {
     }
     .box-foter__n1__p {
         padding: 0px 0px ;
-        font-size: ;
-        font-family: ;
+        font-size: var(--font-weight-desktop-h4) ;
+        font-family:var(--font-family) ;
     }
-    ..box-foter__n1__p {
+    .box-foter__n1__p {
         padding:15px 0px ;
-        font-size: ;
-        font-family: ;
+        font-size: var(--font-weight-desktop-h4) ;
+        font-family:var(--font-family) ;
     }
 
     .box-foter__n2__p {
         padding: 0px 15px ;
-        font-size: ;
-        font-family: ;
+        font-size:var(--font-weight-desktop-h4) ;
+        font-family:var(--font-family) ;
     }
     .box-heder__n1__p {
         padding: 40px  200px;
-        font-size: ;
-        font-family: ;
+        font-size: var(--font-family) ;
+        font-family: var(--font-family) ;
     }
 }
