@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,29 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/style-productdetails.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/images/general/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Product Details - BeHome</title>
 </head>
+
 <body>
-    
+
+
     <!-- ============================== Header section =============================== -->
 
     <div class="containerheader" id="containerheader">
-      <div class="containerheader__logo">
-        <img src="../assets/images/general/logo.svg" alt="behome-logo" />
-      </div>
-      <div class="containerheader__navbar">
-        <div class="containerheader__navbar__hamburgermenu">
-          
-          <label><img src="../assets/images/general/menuIcon.svg" alt="hamburgermenu-icon"/></label>
-          <input type="checkbox" id="toggle"/>
+        <div class="containerheader__logo">
+            <img src="../assets/images/general/logo.svg" alt="behome-logo" />
         </div>
-        <div class="containerheader__navbar__menu">
-          <div class="containerheader__navbar__menu__closeicon">
+        <div class="containerheader__navbar">
+            <div class="containerheader__navbar__hamburgermenu">
 
-            <svg width="35" height="35" viewBox="0 0 50 50"> 
+                <label><img src="../assets/images/general/menuIcon.svg" alt="hamburgermenu-icon"/></label>
+                <input type="checkbox" id="toggle" />
+            </div>
+            <div class="containerheader__navbar__menu">
+                <div class="containerheader__navbar__menu__closeicon">
+
+                    <svg width="35" height="35" viewBox="0 0 50 50"> 
                  <line
                 x1="15"
                 y1="15"
@@ -46,20 +50,15 @@
                 stroke-miterlimit="10"
               ></line>
             </svg>
-          </div>
 
-          <ul>
-            <li>
-              <a
-                class="containerheader__navbar__menu__link--active"
-                href="Home.html"
-                >Home</a>
-            </li>
-            <li>
-              <a
-                class="containerheader__navbar__menu__link"
-                href="Products.html"
-                >Products</a
+                </div>
+
+                <ul>
+                    <li>
+                        <a class="containerheader__navbar__menu__link--active" href="Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="containerheader__navbar__menu__link" href="Products.html">Products</a
               >
             </li>
             <li>
@@ -144,7 +143,110 @@
 
     <!-- ============================== Body section =============================== -->
 
-    <div class="containerproductdetail"></div>
+
+    <div class="containerproductdetail">
+      <div class="containerproductdetail_image_wrapper">
+          <img src="../assets/images/productDetails/productDetails1.jpg" alt="Product Detail Image">
+      </div>
+      <div class="containerproductdetail_maintext">
+          <div class="containerproductdetail_maintext_title">
+              <h2>MAURIS Lobortis Dapibus</h2>
+              <p>Nullam justo quis erat. In hendrerit purus consectetuer at, mollis lobortis. In congue fringilla faucibus, erat metus gravida turpis. Integer sollicitudin eu, nunc. Quisque arcu id risus. Aliquam sem. Nulla dignissim.</p>
+          </div>
+          <div class="containerproductdetail_attribute">
+              <table class="containerproductdetail_table">
+                  <tr>
+                      <td class="containerproductdetail_table_title">Available colors</td>
+                      <td class="containerproductdetail_table_details">
+                          <div class="table-first-row-icon-colors"><img src="../assets/images/productDetails/iconColor1.png" alt="icon color"></div>
+                          <div class="table-first-row-icon-colors"><img src="../assets/images/productDetails/iconColor2.png" alt="icon color"></div>
+                          <div class="table-first-row-icon-colors"><img src="../assets/images/productDetails/iconColor3.png" alt="icon color"></div>
+                          <div class="table-first-row-icon-colors"><img src="../assets/images/productDetails/iconColor4.png" alt="icon color"></div>
+                          <div class="table-first-row-icon-colors"><img src="../assets/images/productDetails/iconColor5.png" alt="icon color"></div>
+                      </td>
+                  </tr>
+                  <tr class="containerproductdetail_table_row">
+                      <td class="containerproductdetail_table_title">Dimension</td>
+                      <td class="containerproductdetail_table_details"> <span>123 x 333 x 55</span> Aliquam faucibus orci elit</td>
+                  </tr>
+                  <tr class="containerproductdetail_table_row">
+                      <td class="containerproductdetail_table_title">Description</td>
+                      <td class="containerproductdetail_table_details">Maecenas wisi. Sed elementum, sapien sodales lectus lectus, porta et, nonummy at, bibendum ac, semper dui, ultrices dui. Integer aliquam. Phasellus ornare ac, felis. Phasellus ornare eu, posuere cubilia Curae, Integer egestas,
+                          dui a diam. Duis lobortis, mi id mi ipsum dolor id lorem pretium wisi. In pede. Sed fringilla sem orci, viverra mattis. Aliquam erat lacus, suscipit suscipit placerat, molestie vitae, ultricies a, tortor. Suspendisse bibendum
+                          leo eros, varius ac, pede. Duis.</td>
+                  </tr>
+                  <tr class="containerproductdetail_table_row">
+                      <td class="containerproductdetail_table_title">Materials</td>
+                      <td class="containerproductdetail_table_details">Fusce condimentum urna, id dolor sit amet elit. Curabitur enim. Etiam tellus. Donec porttitor magna. Sed nec nisl ut pede. Morbi quis ante. Integer sollicitudin posuere, lacus ultrices.</td>
+                  </tr>
+                  <tr class="containerproductdetail_table_row">
+                      <td class="containerproductdetail_table_title">Weight</td>
+                      <td class="containerproductdetail_table_details"><span>120</span> pounds</td>
+                  </tr>
+                  <tr class="containerproductdetail_table_row">
+                      <td class="containerproductdetail_table_title">Manual</td>
+                      <td class="containerproductdetail_table_details">
+                          <button class="containerproductdetail_table_btn">Lorem ipsum dolor</button>
+                      </td>
+                  </tr>
+              </table>
+              <div class="containerproductdetail_attribute_aside_text">
+                  <h5>Duis gravida, nisl pellentesque eget, faucibus orci sem ac turpis egestas. Praesent feugiat. Cum sociis natoque penatibus et est neque congue.</h5>
+                  <p>Cras justo ipsum wisi, dapibus ac, tincidunt quis, placerat consequat.</p>
+              </div>
+          </div>
+          <div class="containerproductdetail_downimage">
+              <div class="containerproductdetail_downimage_top">
+                  <div class="containerproductdetail_downimage_attr downimage_top_attr">
+                      <img id="attrImg" src="../assets/images/productDetails/productDetails3.jpg" alt="Product Detail Image">
+                  </div>
+                  <div class="containerproductdetail_downimage_attr downimage_top_attr">
+                      <img id="attrImg" src="../assets/images/productDetails/productDetails4.jpg" alt="Product Detail Image">
+                  </div>
+              </div>
+              <div class="containerproductdetail_downimage_attr">
+                  <img id="attrImg" src="../assets/images/productDetails/productDetails5.jpg" alt="Product Detail Image">
+              </div>
+              <div id="imageModalSection" class="containerproductdetail_downimage_attr_modal">
+                  <div class="popup_modal">
+                      <span class="close">&times;</span>
+                      <img class="modal_content" id="modalImg" src="../assets/images/productDetails/productDetails3.jpg">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="containerproductdetail_image_wrapper_down">
+          <img src="../assets/images/productDetails/productDetails2.jpg" alt="Product Detail Image">
+      </div>
+      <div class="containerproductdetail_left_snackbar">
+          <button class="containerproductdetail_btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="btn_hidden_snackbar">
+            <img src="../assets/images/productDetails/product1.jpg" alt="Product Detail">
+              <div class="btn_hidden_text">
+                  <h5>FUSCE Eu Lobortis</h5>
+                  <div class="snackbar_line"></div>
+                  <div class="btn_hidden_text_time">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>Farvardin 27, 2023</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="containerproductdetail_right_snackbar">
+        <button class="containerproductdetail_btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="btn_hidden_snackbar">
+            <div class="btn_hidden_text">
+                <h5>FUSCE Eu Lobortis</h5>
+                <div class="snackbar_line"></div>
+                <div class="btn_hidden_text_time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Farvardin 27, 2023</p>
+                </div>
+            </div>
+            <img src="../assets/images/productDetails/product1.jpg" alt="Product Detail">
+        </div>
+    </div>
+  </div>
 
     <!-- ============================== Footer section =============================== -->
 
@@ -162,43 +264,45 @@
         <div class="containerfooter__footer1__list1">
           <ul>
             <li><span>&#8594 &nbsp &nbsp</span><a href="#">Duis sed odio sit</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Morbi accum ipsum</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Nam nec tellus</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Class aptent taciti</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Mauris in erat justo</a></li>
 
-          </ul>
-        </div>
-        <div class="containerfooter__footer1__list2">
-          <ul>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Aenean sollicitudin</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Duis sed odio sit amet</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Morbi accumsan</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Nam nec tellus</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Class aptent taciti</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Mauris in erat justo</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Morbi accum ipsum</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Nam nec tellus</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Class aptent taciti</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Mauris in erat justo</a></li>
 
-          </ul>
+                </ul>
+            </div>
+            <div class="containerfooter__footer1__list2">
+                <ul>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Aenean sollicitudin</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Duis sed odio sit amet</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Morbi accumsan</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Nam nec tellus</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Class aptent taciti</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#"> Mauris in erat justo</a></li>
+
+                </ul>
+            </div>
+            <div class="containerfooter__footer1__list3">
+                <ul>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#">Quent per conubia</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#">Nceptos himenaeos</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#">Mauris in erat</a></li>
+                    <li><span>&#8594 &nbsp &nbsp</span><a href="#">Lustoac</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="containerfooter__footer1__list3">
-          <ul>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#">Quent per conubia</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#">Nceptos himenaeos</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#">Mauris in erat</a></li>
-            <li><span>&#8594 &nbsp &nbsp</span><a href="#">Lustoac</a></li>
-          </ul>
-        </div> 
-      </div>
-      <div class="cotainerfooter__divider"></div>
-      <div class="containerfooter__footer2">
-        <div class="containerfooter__footer2__gototop">
-          <a href="#"><img src="../assets/images/general/UpIcon.svg" alt="up-icon"></a>
+        <div class="cotainerfooter__divider"></div>
+        <div class="containerfooter__footer2">
+            <div class="containerfooter__footer2__gototop">
+                <a href="#"><img src="../assets/images/general/UpIcon.svg" alt="up-icon"></a>
+            </div>
+            <div class="containerfooter__footer2__copyright">
+                <p><span>&#169 &nbsp</span>2023 Betheme by <span class="copyright--blacktext"><a href="#">Muffin group</a></span> | All Rights Reserved | Powered by <span class="copyright--blacktext"><a href="#">WordPress</a></span></p>
+            </div>
         </div>
-        <div class="containerfooter__footer2__copyright">
-          <p><span>&#169 &nbsp</span>2023 Betheme by <span class="copyright--blacktext"><a href="#">Muffin group</a></span> | All Rights Reserved | Powered by <span class="copyright--blacktext"><a href="#">WordPress</a></span></p>
-        </div>
-      </div>
     </div>
     <script src="../JS/script.js"></script>
-  </body>
+</body>
+
 </html>
