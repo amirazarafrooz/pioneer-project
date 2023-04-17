@@ -97,7 +97,13 @@
   letter-spacing: 1px;
 }
 .containerheader__navbar__menu__link:hover {
+
   color: var(--color-neutral-white);
+  font-family: var(--font-family);
+  font-size: var(--font-size-mobile-body);
+  line-height: var(--font-LH-mobile-body);
+  font-weight: var(--font-weight-mobile-body);
+  letter-spacing: 1px;
 }
 .--gold {
   color: var(--color-primary-main);
@@ -545,7 +551,6 @@ background-color: cadetblue;
   color: var(--color-primary-main);
 }
 }
-
 
 
 
