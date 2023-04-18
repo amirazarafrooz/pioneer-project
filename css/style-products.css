@@ -105,139 +105,6 @@
   --font-LH-mobile-a: 2.4rem;
   --font-LH-mobile-p: 1.6rem;
 }
-@media screen and (min-width: 750px) {
-  .containerproducts {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 200px;
-  }
-  .header-products {
-    text-align: center;
-    font-size: 58px;
-    line-height: 60px;
-    font-weight: 700;
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-  }
-  .selector {
-    width: 100%;
-    height: 100px;
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .container-selector {
-    display: flex;
-    height: 50%;
-  }
-  .child-selector {
-    width: 40%;
-    height: 100%;
-    cursor: pointer;
-    font-size: 15px;
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    text-align: center;
-    border: none;
-    margin-top: 10px;
-    margin-left: 30px;
-  }
-  .child-selector:hover {
-    border-bottom: 2px solid var(--color-primary-main);
-  }
-  #border-bt {
-    border-bottom: 2px solid var(--color-primary-main);
-  }
-  #border-bt > a {
-    color: var(--color-primary-main);
-  }
-
-  .child-selector > a {
-    color: var(--color-neutral-200);
-    text-decoration: none;
-  }
-  .child-selector > a:hover {
-    color: var(--color-primary-main);
-  }
-
-  .selection {
-    display: grid;
-    width: 80%;
-    height: 1400px;
-    margin: auto;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-columns: 33% 33% 33%;
-  }
-  .Box {
-    margin: 10px;
-  }
-  #Box1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  #Box2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  #Box3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-  }
-  #Box4 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-  #Box5 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-  }
-  #Box6 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-  }
-  #Box7 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-  #Box8 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-  }
-  #Box9 {
-    grid-row: 3/4;
-    grid-column: 3/4;
-  }
-  .img-selection {
-    width: 100%;
-    cursor: pointer;
-  }
-  .img-selection:hover {
-    transform: scale(115%, 115%);
-    transition: all 0.3s ease-in-out;
-  }
-  .description-img > a {
-    color: var(--color-neutral-black);
-    font-size: var(--font-LH-desktop-tb);
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-desktop-h2);
-    text-decoration: none;
-    line-height: 60px;
-    white-space: nowrap;
-  }
-  .description-img > p {
-    color: var(--color-neutral-black);
-    font-size: var(--font-size-desktop-body);
-    font-family: var(--font-family);
-    text-decoration: none;
-    font-weight: inherit;
-    line-height: 25px;
-    color: var(--color-neutral-200);
-  }
-  .break {
-    width: 100%;
-    height: 200px;
-  }
-}
 @media screen and (max-width: 750px) {
   .containerproducts {
     margin-top: 30%;
@@ -263,7 +130,7 @@
     width: 25%;
     height: 100%;
     cursor: pointer;
-    font-size: var(--font-LH-mobile-);
+    font-size: var(--font-LH-desktop-body-);
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
     border: none;
     text-align: center;
@@ -274,6 +141,9 @@
   }
   #border-bt {
     border-bottom: 2px solid var(--color-primary-main);
+  }
+   #border-bt > a {
+    color: var(--color-primary-main);
   }
   #child-selector {
     margin-right: 20px;
@@ -357,5 +227,140 @@
     font-weight: inherit;
     line-height: 25px;
     color: var(--color-neutral-200);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .containerproducts {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+  }
+  .header-products {
+    text-align: center;
+    font-size: 58px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  }
+  .selector {
+    width: 100%;
+    height: 100px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container-selector {
+    display: flex;
+    height: 50%;
+  }
+  .child-selector {
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .child-selector:hover {
+    border-bottom: 2px solid var(--color-primary-main);
+  }
+  #border-bt {
+    border-bottom: 2px solid var(--color-primary-main);
+  }
+  #border-bt > a {
+    color: var(--color-primary-main);
+  }
+
+  .child-selector > a {
+    color: var(--color-neutral-200);
+    text-decoration: none;
+  }
+  .child-selector > a:hover {
+    color: var(--color-primary-main);
+  }
+
+  .selection {
+    display: grid;
+    width: 80%;
+    height: 1400px;
+    margin: auto;
+    margin-left: 15%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .Box {
+    margin: 10px;
+  }
+  #Box1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  #Box2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  #Box3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  #Box4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  #Box5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  #Box6 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  #Box7 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #Box8 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #Box9 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  .img-selection {
+    width: 100%;
+    cursor: pointer;
+  }
+  .img-selection:hover {
+    transform: scale(115%, 115%);
+    transition: all 0.3s ease-in-out;
+  }
+  .description-img > a {
+    color: var(--color-neutral-black);
+    font-size: var(--font-LH-desktop-tb);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-desktop-h2);
+    text-decoration: none;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  .description-img > p {
+    color: var(--color-neutral-black);
+    font-size: var(--font-size-desktop-body);
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-weight: inherit;
+    line-height: 25px;
+    color: var(--color-neutral-200);
+  }
+  .break {
+    width: 100%;
+    height: 200px;
   }
 }
