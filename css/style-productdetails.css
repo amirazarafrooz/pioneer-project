@@ -7,7 +7,6 @@
 .containerproductdetail_image_wrapper {
     width: 100%;
     height: auto;
-    padding: 80px 0 0 0;
     /* this to line for taking up image 100% height of the div. */
     font-size: 0;
     line-height: 0;
