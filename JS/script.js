@@ -8,6 +8,7 @@ const navbarMenu = document.querySelector(".containerheader__navbar__menu");
 const navbarcover = document.querySelector(".containerheader__cover");
 
 hamburgerMenuIcon.addEventListener("click", () => {
+
   hamburgerMenuIcon.classList.toggle("active");
   navbarMenu.classList.toggle("active");
   navbarcover.classList.toggle("active");
