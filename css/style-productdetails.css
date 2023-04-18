@@ -1,5 +1,4 @@
 @import url(global.css);
-
 .containerproductdetail {
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -8,11 +7,14 @@
 .containerproductdetail_image_wrapper {
     width: 100%;
     height: auto;
-    padding: 80px 0 0 0;
+    /* this to line for taking up image 100% height of the div. */
+    font-size: 0;
+    line-height: 0;
 }
 
 .containerproductdetail_image_wrapper img {
     width: 100%;
+    height: 100%;
 }
 
 .containerproductdetail_maintext {
@@ -198,6 +200,9 @@
 
 .containerproductdetail_image_wrapper_down {
     width: 100%;
+    /* this to line for taking up image 100% height of the div. */
+    font-size: 0;
+    line-height: 0;
 }
 
 .containerproductdetail_image_wrapper_down img {
@@ -207,31 +212,21 @@
 
 .containerproductdetail_left_snackbar {
     display: none;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     bottom: 40px;
     left: 0;
-    z-index: 100;
+    height: 80px;
 }
 
-.containerproductdetail_right_snackbar {
-    display: none;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 40px;
-    right: 0;
-    z-index: 100;
-}
-
-.containerproductdetail_btn {
+.containerproductdetail_left_btn {
+    position: relative;
     cursor: pointer;
     border: none;
     background-color: var(--color-primary-main);
     width: 32px;
-    height: 72px;
+    height: 80px;
+    float: left;
+    z-index: 99;
 }
 
 .fa-solid {
@@ -239,49 +234,53 @@
     font-size: 1.4rem;
 }
 
-.btn_hidden_snackbar {
+.snackbar_left_image {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-left: -200px;
+    transition: all .5s ease-in-out;
+    z-index: 98;
+}
+
+.snackbar_image {
+    width: 80px;
+    height: 80px;
+}
+
+.snackbar_left_text {
+    position: relative;
+    cursor: pointer;
     background-color: var(--color-neutral-white);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-
-.btn_hidden_snackbar img {
-    height: 72px;
-}
-
-.btn_hidden_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 72px;
+    float: left;
+    width: 188px;
+    height: 80px;
     padding: 8px 16px;
+    margin-left: -392px;
+    transition: all .5s ease-in-out;
+    z-index: 97;
 }
 
-.snackbar_line {
-    margin: 8px 0;
-    height: 1px;
-    background-color: var(--color-neutral-50);
-}
-
-.btn_hidden_text_time {
+.snackbar_text_time {
     color: var(--color-neutral-100);
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.btn_hidden_text h5 {
+.snackbar_text_header {
     font-size: var(--font-size-tablet-h5);
     line-height: var(--font-LH-tablet-h5);
     font-weight: var(--font-weight-tablet-h5);
 }
 
-.btn_hidden_text_time p {
+.snackbar_text_line {
+    margin: 4px 0;
+    height: 1px;
+    background-color: var(--color-neutral-50);
+}
+
+.snackbar_text_time p {
     font-size: var(--font-size-tablet-big);
     font-weight: var(--font-weight-tablet-big);
 }
@@ -290,9 +289,61 @@
     font-size: var(--font-size-tablet-big);
 }
 
-.show {
-    visibility: show;
-    animation: fadein 0.5s;
+.containerproductdetail_left_snackbar:hover .snackbar_left_image {
+    margin: 0;
+}
+
+.containerproductdetail_left_snackbar:hover .snackbar_left_text {
+    margin: 0;
+}
+
+.containerproductdetail_right_snackbar {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    height: 80px;
+}
+
+.containerproductdetail_right_btn {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-primary-main);
+    width: 32px;
+    height: 80px;
+    z-index: 100;
+    float: right;
+}
+
+.snackbar_right_image {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-right: -200px;
+    transition: all .5s ease-in-out;
+    z-index: 99;
+}
+
+.snackbar_right_text {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-neutral-white);
+    width: 188px;
+    height: 80px;
+    padding: 8px 16px;
+    transition: all .5s ease-in-out;
+    float: right;
+    z-index: 98;
+    margin-right: -392px;
+}
+
+.containerproductdetail_right_snackbar:hover .snackbar_right_image {
+    margin: 0;
+}
+
+.containerproductdetail_right_snackbar:hover .snackbar_right_text {
+    margin: 0;
 }
 
 @keyframes showUp {
@@ -301,17 +352,6 @@
     }
     to {
         transform: scale(1);
-    }
-}
-
-@keyframes fadein {
-    from {
-        left: 0;
-        opacity: 0;
-    }
-    to {
-        left: 30px;
-        opacity: 1;
     }
 }
 
@@ -358,15 +398,14 @@
     }
     .containerproductdetail_downimage_top {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 16px;
     }
     .downimage_top_attr {
         width: 48%;
     }
     .containerproductdetail_right_snackbar {
-        display: flex;
+        display: block;
     }
 }
 
@@ -409,6 +448,10 @@
         line-height: var(--font-LH-desktop-body);
     }
     .containerproductdetail_left_snackbar {
-        display: flex;
+        display: block;
+    }
+    .snackbar_right_image,
+    .snackbar_left_image {
+        margin: 0;
     }
 }

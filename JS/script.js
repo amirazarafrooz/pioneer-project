@@ -25,7 +25,7 @@ document.querySelectorAll(".containerheader__navbar__menu__link").forEach(n => n
 StickyNavMenu = document.getElementById("containerheader");
 window.addEventListener("scroll", () => {
 
-    if (document.documentElement.scrollTop > 100) {
+    if (document.documentElement.scrollTop > 80) {
         StickyNavMenu.classList.add("sticky");
     } else {
         StickyNavMenu.classList.remove("sticky");
