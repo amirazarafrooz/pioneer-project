@@ -25,7 +25,8 @@ html {
 .box-heder__n1__h {
     color: black;
     font-family:var( --font-family);
-    font-size: var(--font-size-desktop-h1) ;
+    font-size: var(--font-size-mobile-h1) ;
+    font-weight: var(--font-size-mobile-h1);
     margin-top:200px ;
     font-weight: var(--font-weight-desktop-h1);
 }
@@ -36,15 +37,16 @@ html {
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: #F5F5F5 ;
+    background-color: var(--color-neutral-50) ;
 }
 
 .box-heder__n1__p {
     text-align: center;
-    color: black;
+    color: var(--color-neutral-black);
     font-family: var(--font-family) ;
-    font-size: var(--font-weight-mobile-h1) ;
+    font-size: var(--font-size-mobile-h4) ;
     padding:20px  40px;
+    font-weight: var(--font-weight-mobile-h4);
 }
 
 .box-heder__n3 {
@@ -63,7 +65,8 @@ html {
     align-items: center;
     justify-content: center;
     font-family: var(--font-family) ;
-    font-size: var(--font-weight-mobile-h1) ;
+    font-size: var(--font-size-mobile-h2) ;
+    font-weight: var(--font-weight-mobile-h2);
 }
 
 .box-text__p {
@@ -71,6 +74,7 @@ html {
     text-align: center;
     font-family: var(--font-family) ;
     font-size: var(font-size-mobile-h3) ;
+    font-weight: var(--font-weight-mobile-h4);
 }
 
 .box-button {
@@ -113,7 +117,8 @@ html {
 .box-img__n1__p1 {
     padding-top: 10px;
     font-family:var(--font-family) ;
-    font-size: var( --font-weight-mobile-h3) ;
+    font-size: var( --font-size-mobile-h4) ;
+    font-weight: var(--font-weight-mobile-big);
 }
 
 .box-img__n2__img {
@@ -129,7 +134,8 @@ html {
 .box-img1__n1__p1 {
     padding-top: 10px;
     font-family: var(--font-family) ;
-    font-size: var( --font-weight-mobile-h3) ;
+    font-size: var( --font-size-mobile-h4) ;
+    font-weight: var(--font-weight-mobile-big);
 }
 
 .box-img1__n2__img {
@@ -148,13 +154,15 @@ html {
 .box-foter__n1__p {
     padding: 15px 0px;
     font-family: var(--font-family);
-    font-size: var(--font-weight-mobile-h3);
+    font-size: var(--font-size-mobile-h4);
+    font-weight: var(--font-weight-mobile-big);
 }
 
 .box-foter__n2__p {
     padding: 15px 0px;
     font-family: var(--font-family) ;
-    font-size: var( --font-weight-mobile-h3);
+    font-size: var(--font-size-mobile-h4);
+    font-weight: var(--font-weight-mobile-h3);
 }
 
 .box-min {
@@ -173,13 +181,15 @@ html {
 .box-min__n2__p {
     font-weight: bold;
     font-family: var(--font-family) ;
-    font-size: var( --font-weight-mobile-h3) ;
+    font-size: var(--font-size-mobile-h5) ;
+    font-weight: var(--font-weight-mobile-h3);
     padding:15px 0px ;
 }
 
 .box-min__n2__p1{
     font-family: var(--font-family) ;
-    font-size: var( --font-weight-mobile-h3) ;
+    font-size: var(--font-size-mobile-h5) ;
+    font-weight: var(--font-weight-mobile-h3);
 }
 
 @media(min-width: 480px) and (max-width: 959px) {
@@ -188,6 +198,47 @@ html {
         width: 100%;
         display: flex;
     }
+
+    .box-heder__n1__h{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-tablet-h1) ;
+        font-weight: var(--font-weight-tablet-h1);
+    }
+    .box-heder__n1__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-tablet-h6) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+    .box-text__p {
+        font-family: var(--font-family) ;
+        font-size: var( --font-weight-tablet-h3) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
+    .box-min__n2__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-tablet-h3) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
+    .box-min__n2__p1 {
+        font-family: var(--font-family) ;
+        font-size: var( --font-weight-tablet-h3) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
+    .box-img__n1__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-tablet-h3) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
+    .box-img__n1__p2 {
+        font-family: var(--font-family) ;
+        font-size: var( --font-size-tablet-h3) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
     .box-img__n2__img {
         padding:0 ;
     }
@@ -196,6 +247,15 @@ html {
     }
     .box-img__n1__p1 {
         padding-right: 20px;
+        font-family: var(--font-family) ;
+        font-size: var( --font-size-tablet-h6) ;
+        font-weight: var(--font-weight-tablet-h4);
+    }
+
+    .box-titr{
+        font-family: var(--font-family) ;
+        font-size: var( --font-size-tablet-h2) ;
+        font-weight: var(--font-weight-tablet-h4);
     }
     .box-min{
         display: flex;
@@ -245,8 +305,9 @@ html {
     }
     .box-foter__n1__p {
         padding: 0px 0px ;
-        font-size:var(--font-weight-tablet-h2) ;
         font-family: var(--font-family) ;
+        font-size: var( --font-size-tablet-h6) ;
+        font-weight: var(--font-weight-tablet-h4);
     }
     .box-foter__n1__p {
         padding:15px 0px ;
@@ -256,10 +317,9 @@ html {
 
     .box-foter__n2__p {
         padding: 0px 15px ;
-        font-size:var(--font-weight-tablet-h2) ;
+        font-size:var(--font-size-tablet-h3) ;
         font-family: var(--font-family) ;
     }
-
 }
 
 @media  (min-width: 960px) {
@@ -271,13 +331,53 @@ html {
     .box-img__n2__img {
         padding:0 ;
     }
+
+    .box-heder__n1__h{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-desktop-h1) ;
+        font-weight: var(--font-weight-desktop-h1);
+    }
+    .box-heder__n1__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-desktop-h6) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
+    .box-text__p {
+        font-family: var(--font-family) ;
+        font-size: var( --font-weight-desktop-h3) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
+
+    .box-min__n2__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-desktop-h3) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
+
+    .box-min__n2__p1 {
+        font-family: var(--font-family) ;
+        font-size: var( --font-weight-desktop-h3) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
+
+    .box-img__n1__p{
+        font-family: var(--font-family) ;
+        font-size: var(--font-size-desktop-h3) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
+
+    .box-img__n1__p2 {
+        font-family: var(--font-family) ;
+        font-size: var( --font-size-desktop-h3) ;
+        font-weight: var(--font-weight-desktop-h4);
+    }
     .box-img__n1 {
         padding:50px 20px;
     }
     .box-img__n1__p1 {
         padding-right: 20px;
-        font-size:var( --font-weight-desktop-h1) ;
-        font-family: var() ;
+        font-size:var( --font-size-desktop-h1) ;
+        font-family: var(--font-family) ;
     }
     .box-min{
         display: flex;
@@ -313,7 +413,7 @@ html {
 
     .box-img1__n1__p1 {
         padding-top: 20px;
-        font-size:var(-font-weight-desktop-h1) ;
+        font-size:var(-font-size-desktop-h1) ;
         font-family: var(--font-family);
     }
 
@@ -332,23 +432,23 @@ html {
     }
     .box-foter__n1__p {
         padding: 0px 0px ;
-        font-size: var(--font-weight-desktop-h4) ;
+        font-size: var(--font-size-desktop-h4) ;
         font-family:var(--font-family) ;
     }
     .box-foter__n1__p {
         padding:15px 0px ;
-        font-size: var(--font-weight-desktop-h4) ;
+        font-size: var(--font-size-desktop-h4) ;
         font-family:var(--font-family) ;
     }
 
     .box-foter__n2__p {
         padding: 0px 15px ;
-        font-size:var(--font-weight-desktop-h4) ;
+        font-size:var(--font-size-desktop-h4) ;
         font-family:var(--font-family) ;
     }
     .box-heder__n1__p {
         padding: 40px  200px;
-        font-size: var(--font-family) ;
+        font-size: var(--font-size-desktop-h4) ;
         font-family: var(--font-family) ;
     }
 }
