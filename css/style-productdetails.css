@@ -26,26 +26,18 @@
     padding: 0 0 36px 0;
 }
 
-
-/* font weight problem */
-
 .containerproductdetail_maintext_title h2 {
     color: var(--color-neutral-900);
     font-size: var(--font-size-mobile-h2);
-    font-weight: var(--font-weight-mobile-h2);
-    /* font-weight: 500; */
+    font-weight: var(--font-weight-mobile-custom);
     line-height: var(--font-LH-mobile-h2);
     margin-bottom: 16px;
 }
 
-
-/* font wieght problem */
-
 .containerproductdetail_maintext_title p {
     color: var(--color-neutral-300);
     font-size: var(--font-size-mobile-big);
-    /* font-weight: var(--font-weight-mobile-big); */
-    font-weight: 100;
+    font-weight: var(---font-weight-mobile-custtom3);
     line-height: var(--font-LH-mobile-big);
 }
 
@@ -64,33 +56,23 @@
     padding: 32px 0;
 }
 
-
-/* font wieght problem */
-
 .containerproductdetail_table_title {
     width: 35%;
     color: var(--color-neutral-900);
     font-size: var(--font-size-mobile-tb);
-    font-weight: 200;
+    font-weight: var(--font-weight-mobile-custtom2);
     line-height: var(--font-LH-mobile-tb);
 }
-
-
-/* font weight problem */
 
 .containerproductdetail_table_details {
     color: var(--color-neutral-300);
     font-size: var(--font-size-mobile-big);
     line-height: var(--font-LH-mobile-big);
-    /* font-weight: var(--font-weight-mobile-big); */
-    font-weight: 100;
+    font-weight: var(---font-weight-mobile-custtom3);
 }
 
-
-/* font weight problem */
-
 .containerproductdetail_table td span {
-    font-weight: 500;
+    font-weight: var(--font-weight-mobile-custom);
 }
 
 .table-first-row-icon-colors {
@@ -107,9 +89,6 @@
     padding: 12px 24px;
 }
 
-
-/* color code for hover mode */
-
 .containerproductdetail_table_btn:hover {
     background-color: var(--color-primary-dark);
 }
@@ -119,24 +98,17 @@
     font-family: var(--font-family);
 }
 
-
-/* font size problem  */
-
 .containerproductdetail_attribute_aside_text h5 {
     font-size: var(--font-size-mobile-h6);
     line-height: var(--font-LH-mobile-h5);
-    /* font-weight: var(--font-weight-mobile-h5); */
-    font-weight: 600;
+    font-weight: var(--font-weight-mobile-h5);
     margin-bottom: 16px;
 }
-
-
-/* font weight problem  */
 
 .containerproductdetail_attribute_aside_text p {
     color: var(--color-neutral-300);
     font-size: var(--font-size-mobile-big);
-    font-weight: 100;
+    font-weight: var(---font-weight-mobile-custtom3);
     line-height: var(--font-LH-mobile-big);
 }
 
@@ -321,7 +293,7 @@
     cursor: pointer;
     float: right;
     margin-right: -200px;
-    /* transition: all .5s ease-in-out; */
+    transition: all .5s ease-in-out;
     z-index: 99;
 }
 
@@ -371,8 +343,7 @@
     }
     .containerproductdetail_maintext_title p {
         font-size: var(--font-size-tablet-h5);
-        /* font-weight: var(--font-weight-mobile-big); */
-        font-weight: 100;
+        font-weight: var(---font-weight-mobile-custtom3);
         line-height: var(--font-LH-tablet-big);
     }
     .containerproductdetail_attribute {
@@ -384,14 +355,10 @@
         width: 40%;
         padding: 0 0 0 40px;
     }
-    /* we don `t have font-size:1.6rem; */
     .containerproductdetail_attribute_aside_text h5 {
-        /* font-size: var(--font-size-tablet-h5); */
-        font-size: 1.5rem;
-        /* font-weight: var(--font-weight-tablet-h5); */
-        font-weight: 600;
-        /* line-height: var(--font-LH-desktop-h5); */
-        line-height: 2.2rem;
+        font-size: var(--font-size-tablet-big2);
+        font-weight: var(--font-weight-tablet-a);
+        line-height: var(--font-LH-desktop-h5);
     }
     .containerproductdetail_downimage_attr {
         margin-top: 42px;
@@ -421,8 +388,7 @@
     }
     .containerproductdetail_maintext_title p {
         font-size: var(--font-size-desktop-big);
-        /* font-weight: var(--font-weight-desktop-big); */
-        font-weight: 100;
+        font-weight: var(---font-weight-mobile-custtom3);
         line-height: var(--font-LH-desktop-big);
     }
     .containerproductdetail_table_details {
@@ -443,8 +409,7 @@
     }
     .containerproductdetail_attribute_aside_text p {
         font-size: var(--font-size-desktop-body);
-        /* font-weight: var(--font-weight-desktop-body); */
-        font-weight: 100;
+        font-weight: var(---font-weight-mobile-custtom3);
         line-height: var(--font-LH-desktop-body);
     }
     .containerproductdetail_left_snackbar {
