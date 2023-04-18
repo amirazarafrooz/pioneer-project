@@ -16,6 +16,47 @@
   }
   .container-selector {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container-selector {
+    display: flex;
+    height: 50%;
+  }
+  .child-selector {
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .child-selector:hover {
+    border-bottom: 2px solid var(--color-primary-main);
+  }
+  #border-bt {
+    border-bottom: 2px solid var(--color-primary-main);
+  }
+  #border-bt > a {
+    color: var(--color-primary-main);
+  }
+
+  .child-selector > a {
+    color: var(--color-neutral-200);
+    text-decoration: none;
+  }
+  .child-selector > a:hover {
+    color: var(--color-primary-main);
+  }
+
+  .selection {
+    display: grid;
+    width: 80%;
+    height: 1400px;
     margin: auto;
     height: 30%;
     width: 50%;
@@ -146,6 +187,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
   }
   .container-selector {
     display: flex;
@@ -191,6 +233,7 @@
   }
   .Box {
     margin: 10px;
+
   }
   #Box1 {
     grid-row: 1/2;
@@ -239,6 +282,7 @@
   .description-img > a {
     color: var(--color-neutral-black);
     font-size: var(--font-LH-desktop-tb);
+
     font-family: var(--font-family);
     font-weight: var(--font-weight-desktop-h2);
     text-decoration: none;
@@ -248,6 +292,7 @@
   .description-img > p {
     color: var(--color-neutral-black);
     font-size: var(--font-size-desktop-body);
+
     font-family: var(--font-family);
     text-decoration: none;
     font-weight: inherit;
@@ -258,4 +303,5 @@
     width: 100%;
     height: 200px;
   }
+
 }
