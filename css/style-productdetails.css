@@ -221,6 +221,7 @@
 }
 
 .snackbar_left_text {
+    font-family: var(--font-family);
     position: relative;
     cursor: pointer;
     background-color: var(--color-neutral-white);
@@ -298,6 +299,7 @@
 }
 
 .snackbar_right_text {
+    font-family: var(--font-family);
     position: relative;
     cursor: pointer;
     background-color: var(--color-neutral-white);
