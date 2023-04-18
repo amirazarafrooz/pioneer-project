@@ -220,6 +220,7 @@
 }
 
 .containerproductdetail_left_btn {
+    position: relative;
     cursor: pointer;
     border: none;
     background-color: var(--color-primary-main);
@@ -235,6 +236,7 @@
 }
 
 .snackbar_left_image {
+    position: relative;
     cursor: pointer;
     float: left;
     margin-left: -200px;
@@ -248,6 +250,7 @@
 }
 
 .snackbar_left_text {
+    position: relative;
     cursor: pointer;
     background-color: var(--color-neutral-white);
     float: left;
@@ -304,6 +307,7 @@
 }
 
 .containerproductdetail_right_btn {
+    position: relative;
     cursor: pointer;
     border: none;
     background-color: var(--color-primary-main);
@@ -314,6 +318,7 @@
 }
 
 .snackbar_right_image {
+    position: relative;
     cursor: pointer;
     float: right;
     margin-right: -200px;
@@ -322,6 +327,7 @@
 }
 
 .snackbar_right_text {
+    position: relative;
     cursor: pointer;
     background-color: var(--color-neutral-white);
     width: 188px;
