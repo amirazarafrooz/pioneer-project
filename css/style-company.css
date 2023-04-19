@@ -150,13 +150,13 @@
 }
 
 /* -----------------tab2------------------ */
-.containercompany__Tabsection__Tab2 {
+/* .containercompany__Tabsection__Tab2 {
   width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 .Tabsection__Tab2__Caption__Col1 {
   width: 85%;
 }
@@ -579,7 +579,7 @@
       .Tabsection__titles{
         padding: 0;
         border-bottom: 1px solid #ebebeb;
-
+        max-width: 900px;
       }
       .Tabsection__titles__title {
         width: 20%;
@@ -587,14 +587,68 @@
         box-shadow: none;
         border: none;
       }
-      .Tabsection__titles__title.active{
+      .Tabsection__titles__title.active {
         width: 20%;
         box-shadow: none;
-        border-bottom: 3px solid var(--color-primary-main);
+      }
+      .Tabsection__titles__title.active a{
+        font-size: var(--font-size-desktop-a);
+         font-weight: var(--font-weight-desktop-a);
+         line-height: var(--font-LH-desktop-a);
       }
       .containercompany__Tabsection__Captions{
-        padding-top: 100px;
+        padding: 100px 0 0 0;
+        max-width: 950px;
       }
-      
+      .Tabsection__Tab1__Caption h3 {
+        font-size: var(--font-size-desktop-h3);
+        font-weight: var(--font-weight-desktop-h3);
+        line-height: var(--font-LH-desktop-h3);
+      }
+      .Tabsection__Tab1__Caption p {
+        font-size: var(--font-size-desktop-body);
+        font-weight: var(--font-weight-desktop-body);
+        line-height: var(--font-LH-desktop-body);
+      }
+      .containercompany__Tabsection__Tab1 img {
+        padding: 0 65px 25px 0;
+        width: 50%;
+      }
+      .Tabsection__Tab2__Caption__Col1 h3,
+.Tabsection__Tab2__Caption__Col2 h3 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-desktop-h3);
+  font-weight: var(--font-weight-desktop-h3);
+  line-height: var(--font-LH-desktop-h3);
+  padding-bottom: 20px;
 }
-
+.Tabsection__Tab2__Caption__Col1 p{
+  padding: 0 25px 25px 0; 
+}
+.containercompany__Tabsection__Captions{
+    max-width: 1200px;
+}
+.Tabsection__Tab3__Caption__Col1 h3,
+.Tabsection__Tab3__Caption__Col2 h3 {
+  font-size: var(--font-size-desktop-h3);
+  font-weight: var(--font-weight-desktop-h3);
+  line-height: var(--font-LH-desktop-h3);
+  padding-bottom: 20px;
+}
+.containercompany__Description1__Firstcolumn h4,
+.containercompany__Description1__Secondcolumn h4 {
+    font-size: var(--font-size-desktop-h4);
+    font-weight: var(--font-weight-desktop-h4);
+    line-height: var(--font-LH-desktop-h4);
+  }
+  
+  .containercompany__Description1__Firstcolumn p,
+  .containercompany__Description1__Secondcolumn p {
+    font-size: var(--font-size-desktop-big);
+    font-weight: var(--font-weight-desktop-big);
+    line-height: var(--font-LH-desktop-big);
+    padding-right: 35px;
+    padding-bottom: 15px;
+   
+  }
+  }
