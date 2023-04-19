@@ -25,8 +25,9 @@
     padding: 5px;
 }
 .containerhome__banner img {
+    object-fit: cover;
     width: 1920px;
-    height: 100vh;
+    height: 100%;
 }
 .containerhome__banner h2{
     color: var(--color-primary-main);
