@@ -1,56 +1,63 @@
-
 @import url(global.css);
-
-.containercontact{
+.containercontact {
     background-color: rgb(255, 255, 255);
     width: 100%;
     /* font-family:"NunitoSans", Helvetica, Arial, sans-serif; */
     font-family: var(--font-family);
 }
 
-.icon-box{
+.icon-box {
     display: flex;
     justify-content: center;
-    padding: 50px  40px 30px 40px;
+    padding: 50px 40px 30px 40px;
 }
- .title-icon .clock-icon .mail-icon .home-icon{
+
+.title-icon .clock-icon .mail-icon .home-icon {
     width: 50px;
     height: 50px;
 }
-.icon{
+
+.icon {
     width: 50px;
     height: 50px;
 }
-.google-map{
+
+.google-map {
     height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.icon-boxes{
+
+.icon-boxes {
     background-color: var( --color-primary-main);
     color: var(--color-neutral-white);
 }
+
+
 /* .icon-text{
     margin-left: 35px;
 } */
-.title-company{
+
+.title-company {
     font-size: var(--font-size-tablet-h4);
     color: var(--color-neutral-900);
 }
-.box-text-form-child{
+
+.box-text-form-child {
     padding: 100px 40px 50px 40px;
-
     justify-content: center;
-
 }
-.home-icon .clock-icon .mail-icon{
+
+.home-icon .clock-icon .mail-icon {
     margin-right: 15px;
 }
-.text-countainer{
+
+.text-countainer {
     padding: 0 30px 0 0;
 }
-input{
+
+input {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -58,26 +65,30 @@ input{
     color: var(--color-text-input);
     border-spacing: 5px;
     padding: 10px;
-    border: var(--border-color-input);
+    border: 1px solid var(--border-color-input);
     box-shadow: var( --shadow-desktop-input);
     font-size: var(--font-size-desktop-h6);
-    margin: 0 0 20px;
+    margin: 0 0 16px;
 }
-::placeholder{
+
+::placeholder {
     color: var(--color-text-input);
 }
-textarea{
+
+textarea {
     width: 100%;
     color: var(--color-text-input);
-    box-shadow:  var(--shadow-desktop-input);
+    box-shadow: var(--shadow-desktop-input);
     padding: 10px;
-    border: var(--border-color-input);  
+    border: 1px solid var(--border-color-input);
     font-size: var(--font-size-desktop-h6);
-    margin-bottom:  0 0 20px;
+    margin-bottom: 0 0 20px;
     font-family: var(--font-family);
-
+    resize: vertical;
+    margin: 0 0 16px;
 }
-button{
+
+button {
     width: 100%;
     height: 40px;
     color: var(--color-neutral-white);
@@ -91,7 +102,8 @@ button{
     font-size: var(--font-size-desktop-body);
     box-shadow: var(--shadow-desktop-input);
 }
-.address-contact{
+
+.address-contact {
     width: 150px;
     margin: 0 0 15px;
     font-size: var(--font-size-mobile-big);
@@ -99,133 +111,147 @@ button{
     font-weight: var(--font-weight-mobile-body);
     color: var(--color-neutral-300);
 }
-.title-company{
+
+.title-company {
     margin-bottom: 15px;
 }
-p{
+
+p {
     margin: 0 0 20px;
     font-size: var(--font-size-mobile-big);
     color: var(--color-neutral-300);
 }
-input:focus{
-    outline:none;
+
+input:focus {
+    outline: none;
     background-color: var( --color-neutral-50);
 }
-textarea:focus{
-    outline:none;
+
+textarea:focus {
+    outline: none;
     background-color: var( --color-neutral-50);
 }
+
+
 /* input:hover{
     background-color: var( --color-neutral-50);
     cursor: pointer;
 
 } */
- textarea:active{
+
+textarea:active {
     background-color: var( --color-neutral-50);
 }
-input:active{
+
+input:active {
     background-color: var( --color-neutral-50);
 }
-h5{
+
+h5 {
     color: var(--color-neutral-900);
     margin: 0 0 7px 0;
     font-size: var(--font-size-tablet-h5);
     line-height: var(--font-LH-tablet-h5);
     font-weight: var(--font-weight-mobile-h5);
 }
-hr{
-    margin: 0 auto 10px auto;  
+
+hr {
+    margin: 0 auto 10px auto;
     height: 1px;
     width: 100%;
     background-color: var(--color-neutral-50);
     border: none;
     color: var(--color-neutral-50);
 }
-h1 ,h2 ,h3 ,h6{
+
+h1,
+h2,
+h3,
+h6 {
     margin-bottom: 15px;
 }
-.icon-title{
+
+.icon-title {
     color: var( --color-neutral-white);
     font-size: var(--font-size-tablet-h4);
 }
-h4{
-    color: var(  --color-neutral-900);
+
+h4 {
+    color: var( --color-neutral-900);
     font-weight: var(--font-weight-tablet-body);
     /* margin-bottom: 15px; */
     font-size: var(--font-size-desktop-h4);
     line-height: var(--font-LH-desktop-h4);
     font-weight: var(--font-weight-mobile-h4);
-
 }
-.form-title{
+
+.form-title {
     color: var( --color-neutral-900);
-    font-size: var(  --font-size-tablet-h4);
+    font-size: var( --font-size-tablet-h4);
     line-height: var(--font-LH-desktop-tb);
     font-weight: var(--font-weight-tablet-body);
     margin-bottom: 15px;
     margin-top: 30px;
 }
 
-.icon-text-child{
+.icon-text-child {
     font-size: var(--font-size-mobile-h6);
 }
-.icon-text{
-    margin-left: 35px;
 
+.icon-text {
+    margin-left: 35px;
 }
+
 @media (min-width: 750px) {
-    .icon-title{
+    .icon-title {
         font-size: var(--font-size-desktop-h5);
         width: 70px;
     }
-    .icon{
+    .icon {
         margin-top: 10px;
-
     }
-    .input-email{
+    .input-email {
         margin-left: 10px;
     }
-    .address-contact{
+    .address-contact {
         font-size: var(--font-size-tablet-h5);
         line-height: var(--font-LH-tablet-big);
     }
-    .title-company{
+    .title-company {
         font-size: var(--font-size-desktop-h5);
     }
-    .icon-boxes{
+    .icon-boxes {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    p{
+    p {
         width: 255px;
         line-height: var(--font-LH-desktop-body);
     }
-    h5{
+    h5 {
         margin-top: 15px;
         font-size: var(--font-size-tablet-big2);
     }
-    .icon-title-clock{
+    .icon-title-clock {
         width: 100px;
     }
-    .icon-box{
+    .icon-box {
         display: flex;
         justify-content: center;
         width: 250px;
         /* margin: 0 auto; */
         /* margin: 0 10px; */
     }
-    .form-title{
+    .form-title {
         margin-top: 0;
         font-size: var(--font-size-desktop-h5);
-
     }
-    .box-text-form-child{
+    .box-text-form-child {
         display: flex;
         justify-content: center;
-
     }
-    .input-countainer{
+    .input-countainer {
         display: flex;
         /* justify-content: space-between ; */
         /* width: 50%; */
@@ -234,46 +260,46 @@ h4{
         margin-left: 10px;
     } */
 }
+
 @media (min-width: 960px) {
-    .icon-title-clock{
+    .icon-title-clock {
         width: 70px;
     }
-    p{
+    p {
         font-size: var(--font-size-desktop-body);
         width: 339px;
     }
-    .title-company{
+    .title-company {
         font-size: var(--font-size-desktop-h4);
     }
-    .form-title{
+    .form-title {
         margin-top: 0;
         font-size: var(--font-size-desktop-h4);
-
     }
-    .icon-text-child{
+    .icon-text-child {
         font-size: var(--font-size-desktop-h6);
         width: 200px;
     }
-    .address-contact{
+    .address-contact {
         font-size: var(--font-size-desktop-big);
         font-size: var(--font-size-desktop-big);
         line-height: var(--font-LH-desktop-h4);
         /* font-weight: var(--font-weight-desktop-h4); */
         width: 200px;
     }
-    .icon-title{
+    .icon-title {
         font-size: var(--font-size-desktop-h4);
     }
-    .form-countainer{
+    .form-countainer {
         width: 550px;
     }
     /* .icon-box-clock{
         margin-left: 100px;
     } */
-    .icon-title-clock{
+    .icon-title-clock {
         width: 150px;
     }
-    .icon-boxes{
+    .icon-boxes {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -281,68 +307,66 @@ h4{
     /* .icon-text-mail{
         margin-right: 100px;
     } */
-    .input  {
+    .input {
         width: 100%;
     }
-    .input-email{
-        width: 100%;
-
-    }
-    .input-name{
+    .input-email {
         width: 100%;
     }
-    .icon-box{
+    .input-name {
+        width: 100%;
+    }
+    .icon-box {
         width: 310px;
     }
-    .box-text-form-child{
+    .box-text-form-child {
         display: flex;
         justify-content: center;
     }
-
-    .box-text-form-child{
+    .box-text-form-child {
         max-width: 3000px;
     }
-    form{
+    form {
         display: flex;
         justify-items: flex-end;
         padding-left: 40px;
     }
-    h5{
+    h5 {
         font-size: var(--font-size-desktop-h5);
     }
 }
-@media (min-width: 1240px){
-    .icon-title-clock{
+
+@media (min-width: 1240px) {
+    .icon-title-clock {
         width: 220px;
     }
-    p{
+    p {
         font-size: var(--font-size-desktop-body);
         width: 339px;
     }
-    .title-company{
+    .title-company {
         font-size: var(--font-size-desktop-h4);
     }
-    .form-title{
+    .form-title {
         margin-top: 0;
         font-size: var(--font-size-desktop-h4);
-
     }
-    .icon-text-child{
+    .icon-text-child {
         font-size: var(--font-size-desktop-h6);
         width: 280px;
     }
-    .address-contact{
+    .address-contact {
         font-size: var(--font-size-desktop-big);
         font-size: var(--font-size-desktop-big);
         line-height: var(--font-LH-desktop-h4);
         /* font-weight: var(--font-weight-desktop-h4); */
         width: 200px;
     }
-    .icon-title{
+    .icon-title {
         font-size: var(--font-size-desktop-h4);
         width: 230px;
     }
-    .form-countainer{
+    .form-countainer {
         width: 600px;
     }
     /* .icon-box-clock{
@@ -351,7 +375,7 @@ h4{
     /* .icon-title-clock{
         width: 150px;
     } */
-    .icon-boxes{
+    .icon-boxes {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -359,36 +383,34 @@ h4{
     /* .icon-text-mail{
         margin-right: 100px;
     } */
-    .input  {
+    .input {
         width: 100%;
     }
-    .input-email{
-        width: 100%;
-
-    }
-    .input-name{
+    .input-email {
         width: 100%;
     }
-    .icon-box{
+    .input-name {
+        width: 100%;
+    }
+    .icon-box {
         width: 400px;
     }
-    .box-text-form-child{
+    .box-text-form-child {
         display: flex;
         justify-content: center;
     }
-
-    .box-text-form-child{
+    .box-text-form-child {
         max-width: 3000px;
     }
-    form{
+    form {
         display: flex;
         justify-items: flex-end;
         padding-left: 40px;
     }
-    h5{
+    h5 {
         font-size: var(--font-size-desktop-h5);
     }
-    .text-countainer{
+    .text-countainer {
         width: 450px;
     }
 }
